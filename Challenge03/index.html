@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <title>JS Challenge 03 - KM to miles</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lxy8kpx.css">
+
+    <link href="/css/site.css" rel="stylesheet">
+    <link href="/Challenge03/site03.css" rel="stylesheet">
+</head>
+
+<body class="h-100">
+    <nav class="navbar navbar-expand-xl navbar-dark fixed-top bg-dark" id="navmenu">
+
+    </nav>
+    <main class="container-fluid h-100 px-5">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h1>convert kilometers to miles</h1>
+                <p class="lead">Write a function that takes a number parameter in kilometers converts the number to
+                    miles. Return the converted number. 
+                </p>
+                <p ><strong>Example:</strong> 1 kilometer is equal to .6214 miles. If you enter 10 it should return 6.21 miles.</p>
+                <p><strong>Extra Credit:</strong> Try to build other conversions like fahrenheit to celsius or meters to feet.</p>
+
+
+                <div class="form-group">
+                    <input type="number" class="form-control" id="InputValue" aria-describedby="kmHelp"
+                        placeholder="Enter km value">
+                    <small id="kmHelp" class="form-text text-muted">Enter a number in kilometers</small>
+                </div>
+                <div class="mt-1 text-end">
+                    <button id="btnSubmit" type="button" class="btn btn-warning">Convert</button>
+                </div>
+                <div id="results" class="display-6">
+                    Result Goes Here
+                </div>
+            </div>
+            <div class="col-12 col-md-6 order-first order-md-2">
+                <img src="/img/JSChallenge.png" class="img-fluid">
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script src="/Challenge03/site03.js"></script>
+    <script>
+        document.getElementById("btnSubmit").addEventListener("click", convertIt);
+    </script>
+     <script src="/js/menu.js"></script>
+     <script>
+         window.addEventListener("load", getmenu(3));
+     </script>
+</body>
+
+</html>

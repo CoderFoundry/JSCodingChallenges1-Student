@@ -1,0 +1,17 @@
+.heroName {
+    font-family: ccbiffbamboom, sans-serif;
+    font-weight: 400;
+    font-style: normal;    
+    color: #dbdbdb;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#ececec, #0331ff);    
+    -webkit-background-clip: text;
+    background-clip: text;
+    letter-spacing: 3px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: rgb(64, 2, 118);
+
+
+}
+

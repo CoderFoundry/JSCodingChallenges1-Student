@@ -1,0 +1,14 @@
+.checkMark{
+    font-size: 1.5rem;
+    color:rgb(62, 255, 62);
+}
+
+.xMark{
+    font-size: 1.5rem;
+    color:red;
+}
+
+.examples td{
+    font-size: 1.5rem;
+}
+

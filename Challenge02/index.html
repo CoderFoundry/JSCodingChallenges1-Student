@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <title>JS Challenge 02 - Balanced Brackets</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lxy8kpx.css">
+
+    <link href="/css/site.css" rel="stylesheet">
+    <link href="/Challenge02/site02.css" rel="stylesheet">
+</head>
+
+<body class="h-100">
+    <nav class="navbar navbar-expand-xl navbar-dark fixed-top bg-dark" id="navmenu">
+
+    </nav>
+    <main class="container-fluid h-100 px-5">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h1>Check for balanced brackets in a string</h1>
+                <p class="lead">Given the string <strong>[()]{}{[()()]()}</strong>, write a function
+                    that takes a string parameter containing brackets, determine if all brackets have a matching
+                    counterpart. <br> If all brackets in the string form balanced pairs, return true. If not, return false.
+                </p>
+                <p class="lead">What are a balanced brackets?</p>
+                <table class="table table-dark table-striped examples">
+                    <caption>Note: You can use these scenarios to test your function</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Brackets</th>
+                            <th scope="col">Balanced?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>([{}])</td>
+                            <td>
+                                <i class="bi bi-check-circle-fill checkMark"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>[(])</td>
+                            <td><i class="bi bi-x-octagon-fill xMark"></i></td>
+
+                        </tr>
+                        <tr>
+                            <td>{(})[]</td>
+                            <td><i class="bi bi-x-octagon-fill xMark"></i></td>
+
+                        </tr>
+                        <tr>
+                            <td>{()[]}</td>
+                            <td><i class="bi bi-check-circle-fill checkMark"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button id="btnSubmit" type="button" class="btn btn-warning">Check Brackets</button>
+            </div>
+            <div class="col-12 col-md-6 order-first order-md-2">
+                <img src="/img/JSChallenge.png" class="img-fluid">
+            </div>
+            <div class="col-12 order-last mt-4 mb-2">
+                <div id="results" class="display-5">
+                   Result Goes Here
+                </div>
+               
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script src="/Challenge02/site02.js"></script>
+    <script>
+        document.getElementById("btnSubmit").addEventListener("click", checkBrackets);
+    </script>
+     <script src="/js/menu.js"></script>
+     <script>
+         window.addEventListener("load", getmenu(2));
+     </script>
+</body>
+
+</html>

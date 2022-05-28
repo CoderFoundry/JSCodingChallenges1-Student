@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <title>JS Challenge 05 - Checking for Anagrams</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lxy8kpx.css">
+
+    <link href="/css/site.css" rel="stylesheet">
+    <link href="/Challenge05/site05.css" rel="stylesheet">
+</head>
+
+<body class="h-100">
+    <nav class="navbar navbar-expand-xl navbar-dark fixed-top bg-dark" id="navmenu">
+
+    </nav>
+    <main class="container-fluid h-100 px-5">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h1>Checking for Anagrams</h1>
+                <p class="lead">Given two strings write a function that checks if they are anagrams. <br> The function
+                    should return true or false. Display a message indicating the result of the function.
+                </p>
+                <p><strong>Note:</strong> An anagram is a word or phrase formed by rearranging the letters of a
+                    different word or phrase.
+                </p>
+                <p><strong>Examples:</strong>
+                    <ul>
+                        <li>listen = silent</li>
+                        <li>sadder = dreads</li>
+                        <li>William Shakespeare = I am a weakish speller</li>
+                        <li>eleven plus two = twelve plus one</li>
+                        <li>a gentleman = elegant man</li>
+                        <li>the detectives = detect thieves</li>
+                    </ul>
+                </p>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Word 1" id="wordOne" aria-label="Word 1">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Word 2" id="wordTwo" aria-label="Word 2">
+                    </div>
+                    <div class="col-12 mt-2 text-end">
+                        <button id="btnSubmit" type="button" class="btn btn-warning">Check</button>
+                    </div>
+                </div>
+                
+                <div id="results" class="display-6">
+                    Result Goes Here
+                </div>
+            </div>
+            <div class="col-12 col-md-6 order-first order-md-2">
+                <img src="/img/JSChallenge.png" class="img-fluid">
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script src="/Challenge05/site05.js"></script>
+    <script>
+        document.getElementById("btnSubmit").addEventListener("click", checkAnagram);
+    </script>
+    <script src="/js/menu.js"></script>
+    <script>
+        window.addEventListener("load", getmenu(5));
+    </script>
+</body>
+
+</html>

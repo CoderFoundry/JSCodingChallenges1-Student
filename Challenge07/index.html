@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <title>JS Challenge 07 - Palindrome Check</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lxy8kpx.css">
+
+    <link href="/css/site.css" rel="stylesheet">
+    <link href="/Challenge06/site06.css" rel="stylesheet">
+</head>
+
+<body class="h-100">
+    <nav class="navbar navbar-expand-xl navbar-dark fixed-top bg-dark" id="navmenu">
+
+    </nav>
+    <main class="container-fluid h-100 px-5">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h1>Check if a string is a palindrome</h1>
+                <p class="lead">Given a string write a function that checks if the string is a palindrome. <br> The function
+                    should return a boolean (true or false). <br> Display a message indicating the result of the function.
+                </p>
+                <p><strong>Note:</strong> A palindrome is a word, phrase, or other sequence of characters which reads
+                    the same backward as forward, such as madam or racecar. You must account for letters and specials
+                    characters for checking
+                </p>
+                <p><strong>Examples of palindromes</strong>
+                    <ul>
+                        <li>radar</li>
+                        <li>taco cat</li>
+                        <li>Eva, can I see bees in a cave? ("," and "?" and spaces are NOT considered)</li>
+                    </ul>
+                </p>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Word or Phrase" id="wordOne"
+                            aria-label="Word">
+                    </div>
+                    <div class="col-12 mt-2 text-end">
+                        <button id="btnSubmit" type="button" class="btn btn-warning">Check for palindrome</button>
+                    </div>
+                </div>
+                <div id="results" class="mt-2">
+                    Result Goes Here
+                </div>
+            </div>
+            <div class="col-12 col-md-6 order-first order-md-2">
+                <img src="/img/JSChallenge.png" class="img-fluid">
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script src="/Challenge07/site07.js"></script>
+    <script>
+        document.getElementById("btnSubmit").addEventListener("click", checkPalindrome);
+    </script>
+    <script src="/js/menu.js"></script>
+    <script>
+        window.addEventListener("load", getmenu(7));
+    </script>
+</body>
+
+</html>
