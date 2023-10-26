@@ -24,6 +24,7 @@ const marvelHeroes = [
     document.getElementById("results").innerHTML = lword;
 
     // Extra credit: display all of the heroes to the page
+    document.getElementById("namelist").innerHTML = marvelHeroes.join(" | ");
 }
 
 // Takes an array of strings and returns the longest one. 
